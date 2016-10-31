@@ -1,0 +1,124 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0099)http://localhost:8080/phpmyadmin/navigation.php?db=yamahadkm&token=f8a46779a394ff49133a39b982b5e1b8 -->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="icon" href="http://localhost:8080/phpmyadmin/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="http://localhost:8080/phpmyadmin/favicon.ico" type="image/x-icon">
+    <title>phpMyAdmin</title>
+    
+    <!--<base target="frame_content">--><base href="." target="frame_content">
+    <link rel="stylesheet" type="text/css" href="phpmyadmin.css.php">
+    <script type="text/javascript" src="navigation.js"></script>
+    <script type="text/javascript" src="functions.js"></script>
+    <script type="text/javascript">
+    // <![CDATA[
+    var image_minus = './themes/original/img/b_minus.png';
+    var image_plus = './themes/original/img/b_plus.png';
+
+    // INIT PMA_setFrameSize
+    var onloadCnt = 0;
+    var onLoadHandler = window.onload;
+    var resizeHandler = window.onresize;
+    window.document.onresize  = resizeHandler;
+    window.onload = function() {
+        if (onloadCnt == 0) {
+            if (typeof(onLoadHandler) == "function") {
+                onLoadHandler();
+            }
+            if (typeof(PMA_setFrameSize) != 'undefined' && typeof(PMA_setFrameSize) == 'function') {
+                PMA_setFrameSize();
+            }
+            onloadCnt++;
+        }
+    };
+    window.onresize = function() {
+        if (typeof(resizeHandler) == "function") {
+            resizeHandler();
+        }
+        if (typeof(PMA_saveFrameSize) != 'undefined' && typeof(PMA_saveFrameSize) == 'function') {
+            PMA_saveFrameSize();
+        }
+    };
+    // ]]>
+    </script>
+        <!--[if IE 6]>
+    <style type="text/css">
+    /* <![CDATA[ */
+    html {
+        overflow-y: scroll;
+    }
+    /* ]]> */
+    </style>
+    <![endif]-->
+</head>
+
+<body id="body_leftFrame">
+<div id="pmalogo">
+<a href="http://localhost:8080/phpmyadmin/main.php?token=f8a46779a394ff49133a39b982b5e1b8" target="frame_content"><img src="logo_left.png" alt="phpMyAdmin" id="imgpmalogo"></a>
+</div>
+<div id="leftframelinks">
+<a href="http://localhost:8080/phpmyadmin/main.php?token=f8a46779a394ff49133a39b982b5e1b8" title="Home"><img class="icon" src="b_home.png" width="16" height="16" alt="Home"></a>
+<a href="http://localhost:8080/phpmyadmin/querywindow.php?db=yamahadkm&amp;token=f8a46779a394ff49133a39b982b5e1b8&amp;no_js=true" title="Query window" onclick="javascript:if (window.parent.open_querywindow()) return false;"><img class="icon" src="b_selboard.png" width="16" height="16" alt="Query window"></a>
+    <a href="http://localhost:8080/phpmyadmin/Documentation.html" target="documentation" title="phpMyAdmin documentation"><img class="icon" src="b_docs.png" width="16" height="16" alt="phpMyAdmin documentation"></a>
+    <a href="http://dev.mysql.com/doc/refman/5.1/en/index.html" target="mysql_doc"><img class="icon" src="b_sqlhelp.png" width="16" height="16" alt="Documentation" title="Documentation"></a>
+</div>
+
+    <div id="databaseList">
+    <form method="post" action="http://localhost:8080/phpmyadmin/index.php" target="_parent" id="left">
+    <label for="lightm_db">Database</label>
+    <input type="hidden" name="token" value="f8a46779a394ff49133a39b982b5e1b8">
+<select name="db" id="lightm_db" xml:lang="en" dir="ltr" onchange="if (this.value != &#39;&#39;) window.parent.openDb(this.value);">
+<option value="" dir="ltr">(Databases) ...</option>
+<option value="a4619996_nhd" title="">a4619996_nhd (14)</option>
+<option value="cdcol" title="">cdcol (1)</option>
+<option value="deja1" title="">deja1 (18)</option>
+<option value="demo1" title="">demo1 (11)</option>
+<option value="digital_life" title="">digital_life (27)</option>
+<option value="information_schema" title="">information_schema (28)</option>
+<option value="mysql" title="">mysql (23)</option>
+<option value="nguyenhieudien" title="">nguyenhieudien (14)</option>
+<option value="nhd" title="">nhd (14)</option>
+<option value="nhd1" title="">nhd1 (21)</option>
+<option value="phpmyadmin" title="">phpmyadmin (8)</option>
+<option value="test" title="">test</option>
+<option value="test1" title="">test1 (19)</option>
+<option value="thietkewebx.net.data" title="">thietkewebx.net.data (12)</option>
+<option value="x1.data.sql" title="">x1.data.sql</option>
+<option value="yamahadkm" title="" selected="selected">yamahadkm (9)</option>
+</select>
+<noscript>
+&lt;input type="submit" name="Go" value="Go" /&gt;
+</noscript>
+</form>
+</div>
+
+<div id="left_tableList">
+    <p><a class="item" href="http://localhost:8080/phpmyadmin/db_structure.php?db=yamahadkm&amp;token=f8a46779a394ff49133a39b982b5e1b8" title="">
+    <span class="navi_dbName">yamahadkm</span> <bdo dir="ltr">(9)</bdo> </a></p><ul id="subel0"><li class="">
+<a title="Structure:  (0)" id="quick_yamahadkm.baiviet" href="http://localhost:8080/phpmyadmin/tbl_structure.php?db=yamahadkm&amp;token=f8a46779a394ff49133a39b982b5e1b8&amp;table=baiviet&amp;goto=tbl_structure.php"><img class="icon" src="b_sbrowse.png" id="icon_yamahadkm.baiviet" width="10" height="10" alt="Structure"></a>
+<a href="http://localhost:8080/phpmyadmin/sql.php?db=yamahadkm&amp;token=f8a46779a394ff49133a39b982b5e1b8&amp;table=baiviet&amp;pos=0" title="Browse:  (0)" id="yamahadkm.baiviet">baiviet</a></li>
+<li>
+<a title="Structure:  (0 Rows)" id="quick_yamahadkm.ct_dathang" href="http://localhost:8080/phpmyadmin/tbl_structure.php?db=yamahadkm&amp;token=f8a46779a394ff49133a39b982b5e1b8&amp;table=ct_dathang&amp;goto=tbl_structure.php"><img class="icon" src="b_sbrowse.png" id="icon_yamahadkm.ct_dathang" width="10" height="10" alt="Structure"></a>
+<a href="http://localhost:8080/phpmyadmin/sql.php?db=yamahadkm&amp;token=f8a46779a394ff49133a39b982b5e1b8&amp;table=ct_dathang&amp;pos=0" title="Browse:  (0 Rows)" id="yamahadkm.ct_dathang">ct_dathang</a></li>
+<li>
+<a title="Structure:  (0 Rows)" id="quick_yamahadkm.ct_khuyenmai" href="http://localhost:8080/phpmyadmin/tbl_structure.php?db=yamahadkm&amp;token=f8a46779a394ff49133a39b982b5e1b8&amp;table=ct_khuyenmai&amp;goto=tbl_structure.php"><img class="icon" src="b_sbrowse.png" id="icon_yamahadkm.ct_khuyenmai" width="10" height="10" alt="Structure"></a>
+<a href="http://localhost:8080/phpmyadmin/sql.php?db=yamahadkm&amp;token=f8a46779a394ff49133a39b982b5e1b8&amp;table=ct_khuyenmai&amp;pos=0" title="Browse:  (0 Rows)" id="yamahadkm.ct_khuyenmai">ct_khuyenmai</a></li>
+<li>
+<a title="Structure:  (0 Rows)" id="quick_yamahadkm.danhmuc_bv" href="http://localhost:8080/phpmyadmin/tbl_structure.php?db=yamahadkm&amp;token=f8a46779a394ff49133a39b982b5e1b8&amp;table=danhmuc_bv&amp;goto=tbl_structure.php"><img class="icon" src="b_sbrowse.png" id="icon_yamahadkm.danhmuc_bv" width="10" height="10" alt="Structure"></a>
+<a href="http://localhost:8080/phpmyadmin/sql.php?db=yamahadkm&amp;token=f8a46779a394ff49133a39b982b5e1b8&amp;table=danhmuc_bv&amp;pos=0" title="Browse:  (0 Rows)" id="yamahadkm.danhmuc_bv">danhmuc_bv</a></li>
+<li class="">
+<a title="Structure:  (0)" id="quick_yamahadkm.dathang" href="http://localhost:8080/phpmyadmin/tbl_structure.php?db=yamahadkm&amp;token=f8a46779a394ff49133a39b982b5e1b8&amp;table=dathang&amp;goto=tbl_structure.php"><img class="icon" src="b_sbrowse.png" id="icon_yamahadkm.dathang" width="10" height="10" alt="Structure"></a>
+<a href="http://localhost:8080/phpmyadmin/sql.php?db=yamahadkm&amp;token=f8a46779a394ff49133a39b982b5e1b8&amp;table=dathang&amp;pos=0" title="Browse:  (0)" id="yamahadkm.dathang">dathang</a></li>
+<li class="">
+<a title="Structure:  (0)" id="quick_yamahadkm.khuyenmai" href="http://localhost:8080/phpmyadmin/tbl_structure.php?db=yamahadkm&amp;token=f8a46779a394ff49133a39b982b5e1b8&amp;table=khuyenmai&amp;goto=tbl_structure.php"><img class="icon" src="b_sbrowse.png" id="icon_yamahadkm.khuyenmai" width="10" height="10" alt="Structure"></a>
+<a href="http://localhost:8080/phpmyadmin/sql.php?db=yamahadkm&amp;token=f8a46779a394ff49133a39b982b5e1b8&amp;table=khuyenmai&amp;pos=0" title="Browse:  (0)" id="yamahadkm.khuyenmai">khuyenmai</a></li>
+<li>
+<a title="Structure:  (0 Rows)" id="quick_yamahadkm.loai_sp" href="http://localhost:8080/phpmyadmin/tbl_structure.php?db=yamahadkm&amp;token=f8a46779a394ff49133a39b982b5e1b8&amp;table=loai_sp&amp;goto=tbl_structure.php"><img class="icon" src="b_sbrowse.png" id="icon_yamahadkm.loai_sp" width="10" height="10" alt="Structure"></a>
+<a href="http://localhost:8080/phpmyadmin/sql.php?db=yamahadkm&amp;token=f8a46779a394ff49133a39b982b5e1b8&amp;table=loai_sp&amp;pos=0" title="Browse:  (0 Rows)" id="yamahadkm.loai_sp">loai_sp</a></li>
+<li class="">
+<a title="Structure:  (0)" id="quick_yamahadkm.sanpham" href="http://localhost:8080/phpmyadmin/tbl_structure.php?db=yamahadkm&amp;token=f8a46779a394ff49133a39b982b5e1b8&amp;table=sanpham&amp;goto=tbl_structure.php"><img class="icon" src="b_sbrowse.png" id="icon_yamahadkm.sanpham" width="10" height="10" alt="Structure"></a>
+<a href="http://localhost:8080/phpmyadmin/sql.php?db=yamahadkm&amp;token=f8a46779a394ff49133a39b982b5e1b8&amp;table=sanpham&amp;pos=0" title="Browse:  (0)" id="yamahadkm.sanpham">sanpham</a></li>
+<li class=" marked">
+<a title="Structure:  (0)" id="quick_yamahadkm.thanhvien" href="http://localhost:8080/phpmyadmin/tbl_structure.php?db=yamahadkm&amp;token=f8a46779a394ff49133a39b982b5e1b8&amp;table=thanhvien&amp;goto=tbl_structure.php"><img class="icon" src="b_sbrowse.png" id="icon_yamahadkm.thanhvien" width="10" height="10" alt="Structure"></a>
+<a href="http://localhost:8080/phpmyadmin/sql.php?db=yamahadkm&amp;token=f8a46779a394ff49133a39b982b5e1b8&amp;table=thanhvien&amp;pos=0" title="Browse:  (0)" id="yamahadkm.thanhvien">thanhvien</a></li>
+</ul></div>
+</body></html>
